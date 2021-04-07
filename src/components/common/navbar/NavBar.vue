@@ -9,29 +9,24 @@
 <script>
 export default {
   name: "NavBar",
-  data() {
-    return {};
-  },
-  created() {},
-  // mounted () {},
-  computed: {},
-  watch: {},
-  methods: {},
 };
 </script>
 
-<style lang="" scoped>
+<style scoped>
 .nav-bar {
   display: flex;
+  height: 44px;
   line-height: 44px;
+  text-align: center;
+  box-shadow: 0 1px 1px rgba(100, 100, 100, 0.1);
 }
 .left,
 .right {
   width: 60px;
-  background-color: pink;
+  /* background-color: pink; */
 }
 .center {
   flex: 1;
-  background-color: rgb(43, 24, 219);
+  /* background-color: rgb(43, 24, 219); */
 }
 </style>
