@@ -7,6 +7,7 @@
 
 <script>
 import GoodsListItem from "./GoodsListItem";
+
 export default {
   name: "GoodsList",
   components: {
@@ -23,6 +24,7 @@ export default {
       },
     },
   },
+
   // created () {},
   // mounted () {},
   // computed: {},

@@ -1,7 +1,7 @@
 <template>
   <swiper>
     <swiper-item v-for="item in banners" :key="item.acm">
-      <a :href="item.link"><img :src="item.image" alt="" /></a>
+      <a :href="item.link"><img :src="item.image" alt="" class="image" /></a>
     </swiper-item>
   </swiper>
 </template>
@@ -30,5 +30,8 @@ export default {
 };
 </script>
 
-<style lang="" scoped>
+<style scoped>
+.image {
+  width: 100%;
+}
 </style>

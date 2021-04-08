@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div class="wrapper" ref="wrapper">
     <ul class="content">
       <li>1</li>
       <li>2</li>
@@ -709,8 +709,13 @@
 import BScroll from "better-scroll";
 export default {
   name: "Category",
+  data() {
+    return {
+      scroll: null,
+    };
+  },
   mounted() {
-    this.scroll = new BScroll(document.querySelector(".wrapper"), {
+    this.scroll = new BScroll(this.$refs.wrapper, {
       // movable: true,
       // zoom: true,
     });
