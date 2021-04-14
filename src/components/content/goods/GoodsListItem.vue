@@ -1,6 +1,6 @@
 <template>
   <div class="goods-item" @click="itemClick">
-    <img :src="goodsItem.show.img" alt="" @load="imageLoad" />
+    <img v-lazy="showImage" alt="" @load="imageLoad" />
 
     <div class="goods-info">
       <p>{{ goodsItem.title }}</p>
@@ -26,7 +26,11 @@ export default {
   },
   // created () {},
   // mounted () {},
-  // computed: {},
+  computed: {
+    showImage() {
+      return this.goodsItem.image || this.goodsItem.show.img;
+    },
+  },
   // watch: {},
   methods: {
     imageLoad() {

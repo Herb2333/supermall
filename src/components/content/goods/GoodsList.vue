@@ -27,7 +27,7 @@ export default {
 
   // created () {},
   // mounted () {},
-  // computed: {},
+  computed: {},
   // watch: {},
   // methods: {}
 };

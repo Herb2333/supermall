@@ -33,7 +33,7 @@ export default {
   methods: {
     imageLoad() {
       if (!this.isLoad) {
-        console.log("lunbotu");
+        // console.log("lunbotu");
         this.$emit("swiperImageLoad");
         this.isLoad = true;
       }
